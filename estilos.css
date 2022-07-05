@@ -125,7 +125,7 @@ header .formulario {
 /*********************CARD PLANETA***************/
 
 .card-planeta {
-    background: url(/img/fondeo-card.png);
+    background: url(./img/fondeo-card.png);
     border-radius: 25px;
     width: 55rem;
     height: 19.4rem;
