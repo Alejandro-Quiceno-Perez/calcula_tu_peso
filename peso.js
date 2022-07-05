@@ -48,7 +48,7 @@ function mostrar_mercurio() {
     console.log(`En el planeta ${mercurio} peso ${peso_final}`);
     
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/mercurio.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/mercurio.jpg" alt="planeta">
     </div>
     <div class="planeta-info">
     <h3 class="titulo-planeta">${mercurio}</h3>
@@ -62,7 +62,7 @@ function mostrar_venus() {
     var pesoPersona = document.getElementById("pesoPersona").value;
     var peso_final = parseInt(pesoPersona * g_venus);
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/venus.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/venus.jpg" alt="planeta">
 </div>
 <div class="planeta-info">
     <h3 class="titulo-planeta">${venus} </h3>
@@ -75,7 +75,7 @@ function mostrar_marte() {
     var pesoPersona = document.getElementById("pesoPersona").value;
     var peso_final = parseInt(pesoPersona * g_marte);
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/marte.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/marte.jpg" alt="planeta">
 </div>
 <div class="planeta-info">
     <h3 class="titulo-planeta">${marte} </h3>
@@ -90,7 +90,7 @@ function mostrar_jupiter() {
     var pesoPersona = document.getElementById("pesoPersona").value;
     var peso_final = parseInt(pesoPersona * g_jupiter);
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/jupiter.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/jupiter.jpg" alt="planeta">
 </div>
 <div class="planeta-info">
     <h3 class="titulo-planeta">${jupiter} </h3>
@@ -105,7 +105,7 @@ function mostrar_saturno() {
     var pesoPersona = document.getElementById("pesoPersona").value;
     var peso_final = parseInt(pesoPersona * g_saturno);
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/saturno.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/saturno.jpg" alt="planeta">
 </div>
 <div class="planeta-info">
     <h3 class="titulo-planeta">${saturno} </h3>
@@ -120,7 +120,7 @@ function mostrar_urano() {
     var pesoPersona = document.getElementById("pesoPersona").value;
     var peso_final = parseInt(pesoPersona * g_urano);
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/urano.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/urano.jpg" alt="planeta">
 </div>
 <div class="planeta-info">
     <h3 class="titulo-planeta">${urano} </h3>
@@ -135,7 +135,7 @@ function mostrar_neptuno() {
     var pesoPersona = document.getElementById("pesoPersona").value;
     var peso_final = parseInt(pesoPersona * g_neptuno);
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/neptuno.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/neptuno.jpg" alt="planeta">
 </div>
 <div class="planeta-info">
     <h3 class="titulo-planeta">${neptuno} </h3>
@@ -149,7 +149,7 @@ function mostrar_pluton() {
     var pesoPersona = document.getElementById("pesoPersona").value;
     var peso_final = parseInt(pesoPersona * g_pluton);
     targetPlaneta.innerHTML += `<div class="container-img-planeta">
-    <img class="img-planeta" src="/img/pluton.jpg" alt="planeta">
+    <img class="img-planeta" src="./img/pluton.jpg" alt="planeta">
 </div>
 <div class="planeta-info">
     <h3 class="titulo-planeta">${pluton} </h3>
