@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    background-image: radial-gradient(circle 610px at 5.2% 51.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
     color: white;
 }
 
@@ -38,9 +38,22 @@ header .formulario {
     color: white;
 }
 
+/*Boton RESET*/
+
+/* From uiverse.io */
+.btn-reset {
+    padding: 0.3rem 1rem;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgba(0, 7, 128, 1) 99.8%);
+    border-radius: 25px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 /*Input*/
 .input {
-    margin: 1.8rem 0;
+    margin: 1.8rem 2rem;
     line-height: 28px;
     border: 2px solid transparent;
     border-bottom-color: #3E065F;
@@ -51,11 +64,12 @@ header .formulario {
     transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.input:focus, .input:active {
+.input:focus,
+.input:active {
     outline: none;
     padding: .2rem 1rem;
     border-radius: 25px;
-    border-color:#3330E4 ;
+    border-color: #3330E4;
 }
 
 .input::placeholder {
@@ -69,7 +83,7 @@ header .formulario {
 
 /************** Section cards *****************/
 .section-cards {
-    margin: 1.5rem 0 ;
+    margin: 1.5rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -94,7 +108,7 @@ header .formulario {
 
 .btn-calcular {
     padding: 0.3rem 1rem;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgba(0, 7, 128, 1) 99.8%);
     border-radius: 25px;
     font-size: 1rem;
     color: white;
@@ -133,6 +147,7 @@ header .formulario {
     margin: 2rem 5rem;
     text-align: center;
 }
+
 .planeta-info .titulo-planeta {
     margin: 2rem 0 1rem 0;
     font-size: 3rem;

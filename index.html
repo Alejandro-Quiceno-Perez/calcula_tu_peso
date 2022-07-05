@@ -8,18 +8,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Trispace:wght@100;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="estilos.css">
     <title>Peso en otro planeta</title>
 </head>
 
-<body>
+<body class="my-element">
     <header>
         <div class="titulo-principal">
             <h1>Peso en otro planeta</h1>
         </div>
-        <div class="formulario">
+        <div class="formulario-inputs">
             <p>¡Tu peso varia en cada planeta! → ¿Quieres saber cual es tu peso?</p>
-            <input class="input" type="text" placeholder="Escribe tu peso" required>
+            <form class="formulario" id="form">
+                <input id="pesoPersona" class="input" type="text" placeholder="Escribe tu peso">
+                <button class="btn-reset" id="btn" type="reset" onclick="location.reload()">Calcular de nuevo</button>
+            </form>
         </div>
     </header>
 
@@ -33,7 +37,7 @@
                 <div class="container-info">
                     <h3>Mercurio</h3>
                 </div>
-                <button class="btn-calcular" id="btn-mercurio" onclick="apretar">Calcular</button>
+                <button id="btn-mercurio" class="btn-calcular" onclick="return mostrar_mercurio()">Mercurio</button>
             </div>
         </div>
         <div class="container-card">
@@ -44,7 +48,7 @@
                 <div class="container-info">
                     <h3>Venus</h3>
                 </div>
-                <button class="btn-calcular" id="btn-venus">Calcular</button>
+                <button class="btn-calcular" id="btn-venus" onclick="mostrar_venus()">Calcular</button>
             </div>
         </div>
         <div class="container-card">
@@ -55,7 +59,7 @@
                 <div class="container-info">
                     <h3>Marte</h3>
                 </div>
-                <button class="btn-calcular" id="btn-marte">Calcular</button>
+                <button class="btn-calcular" id="btn-marte" onclick="mostrar_marte()">Calcular</button>
             </div>
         </div>
         <div class="container-card">
@@ -66,7 +70,7 @@
                 <div class="container-info">
                     <h3>Jupiter</h3>
                 </div>
-                <button class="btn-calcular" id="btn-jupiter">Calcular</button>
+                <button class="btn-calcular" id="btn-jupiter" onclick="mostrar_jupiter()">Calcular</button>
             </div>
         </div>
         <div class="container-card">
@@ -77,7 +81,7 @@
                 <div class="container-info">
                     <h3>Saturno</h3>
                 </div>
-                <button class="btn-calcular" id="btn-saturno">Calcular</button>
+                <button class="btn-calcular" id="btn-saturno" onclick="mostrar_saturno()">Calcular</button>
             </div>
         </div>
         <div class="container-card">
@@ -88,7 +92,7 @@
                 <div class="container-info">
                     <h3>Urano</h3>
                 </div>
-                <button class="btn-calcular" id="btn-urano">Calcular</button>
+                <button class="btn-calcular" id="btn-urano" onclick="mostrar_urano()">Calcular</button>
             </div>
         </div>
         <div class="container-card">
@@ -99,7 +103,7 @@
                 <div class="container-info">
                     <h3>Neptuno</h3>
                 </div>
-                <button class="btn-calcular" id="btn-neptuno">Calcular</button>
+                <button class="btn-calcular" id="btn-neptuno" onclick="mostrar_neptuno()">Calcular</button>
             </div>
         </div>
         <div class="container-card">
@@ -110,23 +114,15 @@
                 <div class="container-info">
                     <h3>Pluton</h3>
                 </div>
-                <button class="btn-calcular" id="btn-pluton">Calcular</button>
+                <button class="btn-calcular" id="btn-pluton" onclick="mostrar_pluton()">Calcular</button>
             </div>
         </div>
     </section>
     <!--Section PLANETA-->
     <section class="card-planeta">
-        <div class="container-planeta">
-            <div class="container-img-planeta">
-                <img class="img-planeta" src="/img/urano.jpg" alt="planeta">
-            </div>
-            <div class="planeta-info">
-                <h3 class="titulo-planeta">Planeta</h3>
-                <p>Mercurio es el planeta del sistema solar más cercano al Sol y el más pequeño. Forma parte de los denominados planetas interiores y carece de satélites naturales al igual que Venus.</p>
-                <h3 class="peso-planeta">Peso en el planeta</h3>
-            </div>
-        </div>
+        <div class="container-planeta" id="new-planeta"></div>
     </section>
+    <script src="animacion.js"></script>
     <script src="peso.js"></script>
 </body>
 
